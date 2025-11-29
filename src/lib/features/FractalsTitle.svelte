@@ -9,7 +9,7 @@
     const MAX_ITER = 300;
     const renderer = createFractalRenderer(MAX_ITER);
 
-    const view: View = { x: -1.4102, y: 0, zoom: 0.5 };
+    const view: View = { x: -1.4102, y: 0, zoom: 10 };
 
     onMount(() => {
         renderer.setCanvas(canvas);
@@ -34,7 +34,7 @@
 >
     <canvas class="rounded-sm" bind:this={canvas}></canvas>
 
-    <div class="h-full grid grid-cols-1 absolute right-0 top-0 z-20 pointer-events-none">
+    <div class="h-full grid grid-cols-1 absolute right-0 top-0 z-20 pointer-events-none rounded-r-sm">
         <svg viewBox="-30 40 65 100" width="100%" height="100%" fill="rgb(197, 245, 227)">
             <text y="5">f</text>
             <text y="30%">r</text>

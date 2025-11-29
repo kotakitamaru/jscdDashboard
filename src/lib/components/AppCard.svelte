@@ -12,8 +12,8 @@
 </script>
 
 
-<a {href} class="shadow-2xs relative cool-border col-span-1 rounded-lg w-full cursor-pointer hover:scale-105 transition-all"
-     style="--gradient-colors: {gradient.join(', ')}; aspect-ratio: 17/6;">
+<a {href} class="shadow-2xs max-w-128 relative cool-border col-span-1 rounded-lg w-full cursor-pointer hover:scale-105 transition-all"
+     style="--gradient-colors: {gradient.join(', ')}; aspect-ratio: 17/7;">
     <img src="{image}" alt="{href}" class="rounded-sm h-full w-full object-cover bg-green-600" />
     {#if Child}
         <Child />
@@ -29,7 +29,7 @@
 
     .cool-border{
         background-clip: padding-box;
-        border: 5px solid transparent;
+        border: 0.5rem solid transparent;
         position: relative;
 
         &:before{
@@ -42,8 +42,7 @@
             right: 0;
             bottom: 0;
             background: linear-gradient(var(--gradient-angle), var(--gradient-colors));
-            margin: -5px;
-
+            margin: -0.5rem;
             animation: spin-gradient 1s linear infinite;
             z-index: -10;
             animation-play-state: paused;

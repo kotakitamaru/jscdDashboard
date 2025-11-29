@@ -6,8 +6,8 @@
 
 <h1 class="text-9xl text-center m-16">jscd</h1>
 
-<div class="grid xl:grid-cols-2 sm:grid-cols-1 gap-4 sm:gap-8 xl:m-48 2xl:m-64
-            md:m-32 m-16 !mt-16 transition-all">
+<div class="list grid lg:grid-cols-2 grid-cols-1 xl:gap-4  gap-4
+            m-auto !mt-16 w-fit transition-all ">
     {#each apps as app}
         <AppCard
             image={app.image}
@@ -16,3 +16,11 @@
             Child={app.Child} />
     {/each}
 </div>
+
+<style>
+    div.list {
+        @media (width < 540px) {
+            margin: 1rem;
+        }
+    }
+</style>

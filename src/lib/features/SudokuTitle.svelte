@@ -2,8 +2,8 @@
 </script>
 
 
-<div class="test absolute w-full h-full left-0 overflow-hidden top-0 contain-inline-size">
-    <svg class="emojis" viewBox="10 0 100 50" width="140%" height="140%">
+<div class="test absolute rounded-sm w-full h-full left-0 overflow-hidden top-0 contain-inline-size">
+    <svg class="emojis" viewBox="0 0 100 50" width="140%" height="140%">
         <text x="0" y="80%" font-size="90%" rotate="20" text-anchor="start">
             🤡
         </text>
