@@ -3,21 +3,18 @@
 
     interface AppCardProps {
         href: string;
-        image: string;
-        Child?: Component | undefined;
+        image?: string;
+        Child?: Component;
         gradient?: string[];
     }
 
     let { href, image, Child = undefined, gradient = ["#fff", "#000"] } : AppCardProps = $props()
-
-
-
 </script>
 
 
-<a {href} class="relative cool-border col-span-1 rounded-lg w-full cursor-pointer hover:scale-105 transition-all"
+<a {href} class="shadow-2xs relative cool-border col-span-1 rounded-lg w-full cursor-pointer hover:scale-105 transition-all"
      style="--gradient-colors: {gradient.join(', ')}; aspect-ratio: 17/6;">
-    <img src="{image}" alt="{href}" class="rounded-lg h-full w-full object-cover bg-green-600" />
+    <img src="{image}" alt="{href}" class="rounded-sm h-full w-full object-cover bg-green-600" />
     {#if Child}
         <Child />
     {/if}

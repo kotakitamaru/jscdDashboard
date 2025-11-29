@@ -1,16 +1,6 @@
 <script>
     import AppCard from "$lib/components/AppCard.svelte";
-    import sudoku from "$lib/assets/sudoku.png"
-    import SudokuTitle from "$lib/features/SudokuTitle.svelte";
-
-    const apps = [
-        {
-            image: sudoku,
-            href: "https://sudoku.jscd.uk",
-            gradient: ["#C0BD02", "#05ADB5"],
-            Child: SudokuTitle
-        }
-    ]
+    import apps from "$lib/features/apps.js";
 
 </script>
 
