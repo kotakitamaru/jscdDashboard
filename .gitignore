@@ -5868,3 +5868,4 @@
 /.svelte-kit/non-ambient.d.ts
 /.svelte-kit/tsconfig.json
 /.env
+/node_modules/
