@@ -7,10 +7,12 @@
 </script>
 
 <h1
-    class="text-9xl text-center m-16"
+    class="text-9xl text-center m-16 cursor-default"
     style="font-family: 'Questrial', sans-serif; color: #232"
 >
-    <span on:click={_ => laserCursor = !laserCursor}>j</span>scd
+    <span on:click={_ => laserCursor = !laserCursor}>
+        j
+    </span>scd
 </h1>
 
 <div class="list grid lg:grid-cols-2 grid-cols-1 xl:gap-4  gap-4
@@ -34,5 +36,24 @@
         @media (width < 540px) {
             margin: 1rem;
         }
+    }
+
+    @property --angle {
+        syntax: '<angle>';
+        initial-value: 0deg;
+        inherits: false;
+    }
+    @keyframes rotateGradient {
+        to {
+            --angle: 360deg;
+        }
+    }
+
+    h1:hover > span{
+        background-clip: text;
+        background-image: linear-gradient(var(--angle), #232, #53836d, #232);
+        color: transparent;
+        animation: rotateGradient 5s linear infinite, shine 3s linear infinite;
+        transition: all;
     }
 </style>
