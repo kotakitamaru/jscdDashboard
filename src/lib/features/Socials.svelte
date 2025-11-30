@@ -3,7 +3,7 @@
 
 </script>
 
-<div class="fixed top-0 right-0 m-3">
+<div class="fixed bottom-0 right-0 m-3">
     <a href="https://github.com/kotakitamaru">
         <Icon.Github  class="github" size="24" />
     </a>
