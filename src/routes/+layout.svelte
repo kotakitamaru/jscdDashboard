@@ -1,6 +1,7 @@
 <script lang="ts">
 	import './layout.css';
 	import icon from '$lib/assets/icon.svg'
+	import Socials from "$lib/features/Socials.svelte";
 	let { children } = $props();
 </script>
 
@@ -9,4 +10,6 @@
 	<title>jscd</title>
 </svelte:head>
 
+
+<Socials />
 {@render children()}

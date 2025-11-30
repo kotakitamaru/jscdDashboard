@@ -12,7 +12,7 @@
 >
     <span on:click={_ => laserCursor = !laserCursor}>
         j
-    </span>scd
+    </span>.scd
 </h1>
 
 <div class="list grid lg:grid-cols-2 grid-cols-1 xl:gap-4  gap-4
