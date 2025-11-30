@@ -49,11 +49,32 @@
         }
     }
 
-    h1:hover > span{
+    h1 > span{
+        animation: appearText 1s linear;
         background-clip: text;
         background-image: linear-gradient(var(--angle), #232, #53836d, #232);
-        color: transparent;
-        animation: rotateGradient 5s linear infinite, shine 3s linear infinite;
+    }
+    h1:hover > span{
+        animation: rotateGradient 5s linear infinite, shine 3s linear infinite, disappearText 1s linear;
         transition: all;
+        color: transparent;
+    }
+
+    @keyframes disappearText {
+        0%{
+            color: rgba(35, 35, 35, 1);
+        }
+        100%{
+            color: rgba(35, 35, 35, 0);
+        }
+    }
+
+    @keyframes appearText {
+        0%{
+            color: rgba(35, 35, 35, 0);
+        }
+        100%{
+            color: rgba(35, 35, 35, 1);
+        }
     }
 </style>
