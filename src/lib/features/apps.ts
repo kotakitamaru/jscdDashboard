@@ -1,12 +1,12 @@
 import FractalsTitle from "$lib/features/FractalsTitle.svelte";
 import sudoku from "$lib/assets/sudoku.png";
 import SudokuTitle from "$lib/features/SudokuTitle.svelte";
-import { PUBLIC_FRACTALS_URL, PUBLIC_SUDOKU_URL } from "$env/static/public";
+import { PUBLIC_FLAGS_URL ,PUBLIC_FRACTALS_URL, PUBLIC_SUDOKU_URL } from "$env/static/public";
 import FlagsTitle from "$lib/features/FlagsTitle.svelte";
 
 const apps = [
     {
-        href: PUBLIC_FRACTALS_URL,
+        href: PUBLIC_FLAGS_URL,
         gradient: ["oklch(0.693 0.161 263.565)", "oklch(0.511 0.262 276.966)"],
         Child: FlagsTitle
     },

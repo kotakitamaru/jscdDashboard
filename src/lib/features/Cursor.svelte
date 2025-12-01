@@ -70,7 +70,7 @@
         width: 10px;
         height: 10px;
         border-radius: 50%;
-        background-color: red;
+        background-color: rgba(255, 0, 0, 0.75);
         position: fixed;
         top: 0;
         left: 0;
